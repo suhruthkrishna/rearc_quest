@@ -1,0 +1,11 @@
+# Part 3: Data Transformation & Analytics Requirements
+# 
+# This file lists the dependencies for Part 3.
+# For a unified installation, use the root requirements.txt:
+#   pip install -r ../requirements.txt
+#
+# Or install individually:
+boto3>=1.41.0
+pandas>=2.2.0
+python-dotenv>=1.2.0
+
