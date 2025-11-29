@@ -1,0 +1,11 @@
+# Part 1: BLS Data Sync Requirements
+# 
+# This file lists the dependencies for Part 1.
+# For a unified installation, use the root requirements.txt:
+#   pip install -r ../requirements.txt
+#
+# Or install individually:
+boto3>=1.41.0
+requests>=2.32.0
+beautifulsoup4>=4.14.0
+python-dotenv>=1.2.0
