@@ -1,0 +1,10 @@
+# Part 2: Population API Ingestion Requirements
+# 
+# This file lists the dependencies for Part 2.
+# For a unified installation, use the root requirements.txt:
+#   pip install -r ../requirements.txt
+#
+# Or install individually:
+boto3>=1.41.0
+requests>=2.32.0
+python-dotenv>=1.2.0
