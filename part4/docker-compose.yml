@@ -1,0 +1,20 @@
+services:
+  cdk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      # Mount the current directory so changes are reflected
+      - .:/app
+      # Mount AWS credentials (if using local credentials)
+      - ~/.aws:/root/.aws:ro
+      # Mount CDK output directory
+      - ./cdk.out:/app/cdk.out
+    environment:
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION:-us-east-1}
+      - AWS_PROFILE=${AWS_PROFILE:-default}
+    working_dir: /app
+    # Keep container running
+    stdin_open: true
+    tty: true
+

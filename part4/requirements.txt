@@ -1,0 +1,11 @@
+# CDK Dependencies for Part 4
+aws-cdk-lib>=2.100.0
+constructs>=10.3.0
+
+# Lambda Dependencies (packaged with Lambda code)
+# These are specified in lambda/requirements.txt
+# boto3 is included in Lambda runtime
+# pandas>=2.2.0
+# requests>=2.32.0
+# beautifulsoup4>=4.14.0
+
