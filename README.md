@@ -105,7 +105,7 @@ It not only downloads the files but also keeps the S3 folder in sync with the so
 cd part1
 python bls_sync.py
 ```
-After running, your S3 bucket contains a complete and up-to-date mirror of all BLS `.txt` files in a folder called bls-data in your S3 bucket.
+After running, your S3 bucket contains a complete and up-to-date mirror of all BLS files in a folder called bls-data in your S3 bucket.
 
 
 ---
