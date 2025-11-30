@@ -1,0 +1,17 @@
+# Unified requirements for all parts of the rearc_quest project
+# Part 1: BLS Data Sync - requires all packages
+# Part 2: Population API Ingestion - requires boto3, requests, python-dotenv
+
+# AWS SDK
+boto3>=1.41.0
+
+# HTTP requests
+requests>=2.32.0
+
+# HTML parsing (for Part 1 - BLS scraping)
+beautifulsoup4>=4.14.0
+
+# Environment variable management
+python-dotenv>=1.2.0
+
+pandas>=2.2.0
