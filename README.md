@@ -47,19 +47,26 @@ Each part is isolated and contains only the dependencies it requires. The root-l
 
 ---
 
+## Overall Workflow structure
+
+<img width="751" height="1316" alt="Rearc_Quest drawio" src="https://github.com/user-attachments/assets/87642392-b700-4b30-b38e-73b25c0523cd" />
+
+---
+
 ## Environment Configuration
 All configuration lives in a single `.env` file at the project root. Each script loads it using the same logic to ensure consistent configuration regardless of where the script is executed.
 Example `.env` file:
+```
 AWS_BUCKET_NAME=rearc-bls
 AWS_BUCKET_PREFIX=bls-data/
-AWS_REGION=us-east-1
+AWS_REGION=us-east-1 # Check as this may vary based on your/bucket location.
 AWS_ACCESS_KEY_ID=your-access-key
 AWS_SECRET_ACCESS_KEY=your-secret-key
 BLS_BASE_URL=https://download.bls.gov/pub/time.series/pr/
 POPULATION_API_URL=https://datausa.io/api/data?drilldowns=Nation&measures=Population
 CONTACT_EMAIL=youremail@address.com
-
-The `.env` file should never be committed to version control.
+```
+**Note:** The `.env` file should never be committed to version control.
 
 ---
 
